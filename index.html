@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>PassX | Your Personal Password Manager</title>
+  </head>
+  <body>
+    <nav>
+      <div>
+        <h3>Pass-X</h3>
+      </div>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact Us</li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1>Your Personal Password Manager.</h1>
+      <span class="text"
+        >No need to worry about remembering the passwords with our secure and
+        user-friendly password manager website</span
+      >
+      <h4>Your Saved Passwords</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>Website</th>
+            <th>Username</th>
+            <th>Password</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+      </table>
+      <h4>Add a Password</h4>
+      <form action="/submit" method="post" id="password-form">
+        <label for="website">Website:</label>
+        <input type="text" id="website" name="website" required /><br />
+
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required /><br />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required /><br />
+
+        <button class="btn" type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
